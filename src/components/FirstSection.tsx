@@ -72,7 +72,7 @@ export default function FirstSection() {
       <h2 className='text-[38px] font-semibold w-full text-left text'>
         Frontend
       </h2>
-      <Hr />
+      <Hr className='smd:hidden' />
       <h2 className='text-[38px] font-semibold w-full text-right text'>
         Developer
       </h2>
