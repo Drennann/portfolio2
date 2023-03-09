@@ -32,9 +32,9 @@ export default function SecondSection() {
       </div>
       <div className='reveal text-[14px] mb-[36px]'>
         <h2>
-          Technologies i commonly use : React, React Native, NextJS,
-          TailwindCSS, NodeJS, Javascript, Typescript, Express, GSAP, AWS, EC2,
-          Route53, Docker, Mongoose
+          Technologies i commonly use: React, React Native, NextJS, TailwindCSS,
+          NodeJS, Javascript, Typescript, Express, GSAP, AWS, EC2, Route53,
+          Docker, Mongoose
         </h2>
       </div>
       <div className='reveal font-semibold mb-[24px]'>

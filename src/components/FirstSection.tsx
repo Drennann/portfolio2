@@ -56,7 +56,7 @@ export default function FirstSection() {
   return (
     <section
       ref={container}
-      className='min-h-screen w-full flex justify-start items-center flex-col'
+      className='min-h-screen w-full flex justify-start items-center flex-col pb-[100px]'
     >
       <div className='mb-[calc(14vh+10px)] w-full reveal'>
         <header className='flex justify-between w-full'>
