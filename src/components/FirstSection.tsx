@@ -69,13 +69,15 @@ export default function FirstSection() {
         Argentine
       </h2>
       <Hr />
-      <h2 className='text-[38px] font-semibold w-full text-left text'>
-        Frontend
-      </h2>
-      <Hr />
-      <h2 className='text-[38px] font-semibold w-full text-right text'>
-        Developer
-      </h2>
+      <div className='w-full'>
+        <h2 className='text-[38px] font-semibold w-full text-left text'>
+          Frontend
+        </h2>
+        <Hr />
+        <h2 className='text-[38px] font-semibold w-full text-right text'>
+          Developer
+        </h2>
+      </div>
       <Hr />
       <h2 className='text-[38px] font-semibold w-full text-left text'>Based</h2>
       <Hr />
