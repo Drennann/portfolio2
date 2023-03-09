@@ -1,3 +1,3 @@
 export default function Hr() {
-  return <hr className='min-w-full border-[#121212]' />
+  return <hr className='min-w-[100%] border-[#121212] self-start' />
 }
