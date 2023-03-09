@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import FirstSection from '@/components/FirstSection'
+import SecondSection from '@/components/SecondSection'
+import ThirdSection from '@/components/ThirdSection'
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       </Head>
       <Layout>
         <FirstSection />
+        <SecondSection />
+        <ThirdSection />
       </Layout>
     </>
   )

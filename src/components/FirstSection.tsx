@@ -56,9 +56,9 @@ export default function FirstSection() {
   return (
     <section
       ref={container}
-      className='min-h-full w-screen flex justify-start items-center flex-col'
+      className='min-h-screen w-full flex justify-start items-center flex-col'
     >
-      <div className='mb-[calc(6vh+10px)] w-full reveal'>
+      <div className='mb-[calc(14vh+10px)] w-full reveal'>
         <header className='flex justify-between w-full'>
           <h2 className='font-light text-[32px]'>Federico</h2>
           <h2 className='font-light text-[32px]'>Achaval</h2>
@@ -82,13 +82,13 @@ export default function FirstSection() {
       <h2 className='text-[38px] font-semibold text'>In Buenos Aires</h2>
       <Hr />
       <Card
-        className='bg-[#FFF] text-[#3f3b37] mt-[30px]'
+        className='bg-[#FFF] text-[#3f3b38] mt-[30px]'
         text='About'
         number='01'
       />
-      <Card className='bg-[#db4c44] text-white' text='Projects' number='02' />
+      <Card className='bg-[#db4c45] text-white' text='Projects' number='02' />
       <Card
-        className='bg-[#e7aa2c] text-[#3f3b37]'
+        className='bg-[#e7aa2d] text-[#3f3b38]'
         text='Contact'
         number='03'
       />
