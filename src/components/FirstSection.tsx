@@ -22,7 +22,6 @@ export default function FirstSection() {
         x: 80,
         opacity: 0,
         duration: 1,
-        delay: 1,
         ease: 'Power4.out'
       })
       tl.from('hr', {
