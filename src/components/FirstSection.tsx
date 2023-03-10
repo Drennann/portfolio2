@@ -13,6 +13,8 @@ export default function FirstSection() {
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context((context: any) => {
       const tl = gsap.timeline()
+      const hrs = context.selector('hr')
+      console.log(hrs)
       tl.from('.reveal', {
         x: 80,
         opacity: 0,
@@ -21,8 +23,9 @@ export default function FirstSection() {
         ease: 'Power4.out'
       })
       tl.from('hr', {
-        minWidth: '0%',
         duration: 1,
+        opacity: 0,
+        xPercent: -100,
         ease: 'Power4.out',
         stagger: {
           amount: 0.3
@@ -69,19 +72,25 @@ export default function FirstSection() {
         Argentine
       </h2>
       <Hr />
-      <div className='w-full'>
-        <h2 className='text-[38px] font-semibold w-full text-left text'>
+      <div className='smd:flex block w-full overflow-y-hidden'>
+        <h2 className='text-[38px] font-semibold min-w-full text-left text smd:inline-block smd:min-w-fit'>
           Frontend
         </h2>
-        <Hr />
-        <h2 className='text-[38px] font-semibold w-full text-right text'>
+        <Hr className='smd:hidden' />
+        <h2 className='text-[38px] font-semibold w-full text-right text smd:inline'>
           Developer
         </h2>
       </div>
       <Hr />
-      <h2 className='text-[38px] font-semibold w-full text-left text'>Based</h2>
-      <Hr />
-      <h2 className='text-[38px] font-semibold text'>In Buenos Aires</h2>
+      <div className='smd:flex block w-full overflow-y-hidden'>
+        <h2 className='text-[38px] font-semibold w-full text-left text smd:w-fit'>
+          Based
+        </h2>
+        <Hr className='smd:hidden' />
+        <h2 className='text-[38px] font-semibold text smd:w-full text-right'>
+          In Buenos Aires
+        </h2>
+      </div>
       <Hr />
       <Card
         className='bg-[#FFF] text-[#3f3b38] mt-[30px]'
