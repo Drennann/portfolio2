@@ -8,4 +8,9 @@
   box-sizing: border-box;
   color: #3e3b35;
   user-select: none;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #b2b2a6;
 }

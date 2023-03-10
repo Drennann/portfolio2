@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
+      smd: { min: '480px' },
       md: { min: '768px' },
       ld: { min: '1024px' },
-      gd: { min: '1600px' }
+      gd: { min: '1600px' },
+      maxsmd: { max: '767px' }
     }
   },
   plugins: []
