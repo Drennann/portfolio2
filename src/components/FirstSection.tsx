@@ -14,6 +14,10 @@ export default function FirstSection() {
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context((context: any) => {
       const tl = gsap.timeline()
+      tl.from('.current', {
+        autoAlpha: 0,
+        ease: 'linear'
+      })
       tl.from('.reveal', {
         x: 80,
         opacity: 0,
@@ -58,7 +62,7 @@ export default function FirstSection() {
   return (
     <section
       ref={container}
-      className='min-h-screen w-full flex justify-start items-center flex-col pb-[100px]'
+      className='min-h-screen w-full flex justify-start items-center flex-col pb-[100px] invisible current'
     >
       <div className='mb-[calc(14vh+10px)] w-full reveal'>
         <header className='flex justify-between w-full md:justify-center italic'>
