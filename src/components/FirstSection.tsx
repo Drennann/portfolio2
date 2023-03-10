@@ -3,14 +3,14 @@ import Hr from './Hr'
 import { useIsomorphicLayoutEffect } from '@/helpers/useIsomorphicLayoutEffect'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
-import { useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export default function FirstSection() {
   const container = useRef(null)
 
-  useIsomorphicLayoutEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context((context: any) => {
       const tl = gsap.timeline()
       tl.from('.reveal', {
