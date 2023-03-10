@@ -13,8 +13,6 @@ export default function FirstSection() {
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context((context: any) => {
       const tl = gsap.timeline()
-      const hrs = context.selector('hr')
-      console.log(hrs)
       tl.from('.reveal', {
         x: 80,
         opacity: 0,
@@ -72,22 +70,22 @@ export default function FirstSection() {
         Argentine
       </h2>
       <Hr />
-      <div className='smd:flex block w-full overflow-y-hidden'>
-        <h2 className='text-[38px] font-semibold min-w-full text-left text smd:inline-block smd:min-w-fit'>
+      <div className='smd:flex block w-full overflow-y-hidden smd:justify-between'>
+        <h2 className='text-[38px] font-semibold smd:w-fit text-left text'>
           Frontend
         </h2>
         <Hr className='smd:hidden' />
-        <h2 className='text-[38px] font-semibold w-full text-right text smd:inline'>
+        <h2 className='text-[38px] font-semibold w-full text-right text smd:w-fit'>
           Developer
         </h2>
       </div>
       <Hr />
-      <div className='smd:flex block w-full overflow-y-hidden'>
-        <h2 className='text-[38px] font-semibold w-full text-left text smd:w-fit'>
+      <div className='smd:flex block w-full overflow-y-hidden smd:justify-between'>
+        <h2 className='text-[36px] font-semibold w-full text-left text smd:w-fit '>
           Based
         </h2>
         <Hr className='smd:hidden' />
-        <h2 className='text-[38px] font-semibold text smd:w-full text-right'>
+        <h2 className='text-[36px] font-semibold text text-right smd:w-fit'>
           In Buenos Aires
         </h2>
       </div>
